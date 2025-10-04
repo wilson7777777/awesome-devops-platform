@@ -1,0 +1,45 @@
+# Awesome DevOps Platform
+
+## Overview
+This is a **microservices-based e-commerce platform** designed to demonstrate DevOps best practices, including **Docker, Kubernetes, scaling, and service-to-service communication**.  
+
+The project consists of two main services:
+
+1. **Catalog Service** – Manages product listings (CRUD API).  
+2. **Orders Service** – Communicates with Catalog service to retrieve product information.  
+
+All services are deployed on Kubernetes with **replica scaling** and **internal service communication**.
+
+---
+
+## Tech Stack
+- **Python 3.11 + Flask** – REST APIs for microservices
+- **Docker** – Containerization of services
+- **Kubernetes** – Deployment, scaling, and service management
+- **kubectl** – CLI for managing Kubernetes
+- **Git/GitHub** – Version control
+
+---
+
+## Features
+- CRUD API for products (`/products`) in Catalog service:
+  - Get all products
+  - Get product by ID
+  - Add product
+  - Update product
+  - Delete product
+- Service-to-service communication between Orders and Catalog
+- Horizontal scaling using Kubernetes replicas
+- Load balancing across multiple pod replicas
+- Pod-aware responses (each product response shows the pod serving it)
+  
+---
+
+## Setup Instructions
+
+### Clone the repo
+```bash
+git clone https://github.com/wilson7777777/awesome-devops-platform.git
+cd awesome-devops-platform
+
+
